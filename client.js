@@ -12,6 +12,7 @@ const connect = function() {
 
   conn.on("connect", () => { // code that does something when the connection is first established; "connect" is the event name defined by Node
     console.log('You have succesfully connected!');
+    conn.write('Name: KM');
   });
 
   return conn;
